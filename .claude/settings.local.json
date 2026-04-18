@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node_modules/.bin/astro build:*)",
+      "Bash(powershell.exe -Command \"Compress-Archive -Path ''''dist\\\\*'''' -DestinationPath ''''dist.zip'''' -Force\")",
+      "Bash(node screenshot.mjs http://localhost:3000 2026-colors)",
+      "Bash(npm run:*)",
+      "Bash(rm -f dist.zip)",
+      "Bash(powershell -Command \"Compress-Archive -Path dist\\\\* -DestinationPath dist.zip\")",
+      "Bash(where ffmpeg:*)",
+      "Bash(where ffprobe:*)",
+      "Bash(where mediainfo:*)",
+      "Bash(node screenshot.mjs http://localhost:3000 hero)",
+      "Bash(node screenshot.mjs http://localhost:3000 home)",
+      "WebFetch(domain:www.bryceelliot.com)",
+      "Bash(curl -s https://www.bryceelliot.com/services)",
+      "Bash(curl -s https://www.bryceelliot.com/about)",
+      "Bash(node:*)",
+      "Bash(powershell -Command ':*)"
+    ]
+  }
+}
