@@ -57,7 +57,7 @@ function buildNav() {
   <div class="max-w-[1400px] mx-auto px-6">
     <div class="flex items-center justify-between h-20">
       <a href="index.html" class="flex-shrink-0 flex items-center gap-3 group">
-        <img src="brand_assets/logo.png" alt="Team Drywall Ltd." class="h-12 w-auto brightness-0 invert" width="120" height="48" />
+        <img src="brand_assets/logo.png" alt="Team Drywall Ltd." class="h-12 w-auto " width="120" height="48" />
       </a>
       <ul class="hidden xl:flex items-center gap-0.5">
         ${desktopLinks}
@@ -96,7 +96,7 @@ const FOOTER_HTML = `
       <!-- Brand block -->
       <div class="lg:col-span-4">
         <a href="index.html" class="inline-block mb-6">
-          <img src="brand_assets/logo.png" alt="Team Drywall Ltd." class="h-14 w-auto brightness-0 invert" width="140" height="56" loading="lazy" />
+          <img src="brand_assets/logo.png" alt="Team Drywall Ltd." class="h-14 w-auto " width="140" height="56" loading="lazy" />
         </a>
         <p class="text-white/70 text-sm leading-[1.75] mb-8 max-w-xs">Kelowna-based drywall craftsmanship since 1990. Residential and commercial work across British Columbia and Alberta.</p>
         <div class="inline-flex items-center gap-2 pb-2 border-b border-white/10">

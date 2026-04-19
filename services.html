@@ -10,7 +10,7 @@
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
   <title>Drywall Services Kelowna | Team Drywall Ltd. | Residential &amp; Commercial</title>
   <meta name="description" content="Team Drywall Ltd. offers residential drywall, commercial drywall, taping &amp; finishing, ceiling systems, drywall repair, and new construction services in Kelowna, BC and Alberta." />
-  <meta name="keywords" content="drywall services Kelowna, residential drywall, commercial drywall, taping finishing, drywall repair, ceiling systems, steel stud framing Kelowna" />
+  <meta name="keywords" content="drywall services Kelowna, residential drywall Kelowna, commercial drywall Kelowna, taping finishing Kelowna, drywall repair, ceiling systems, steel stud framing Kelowna" />
   <link rel="canonical" href="https://teamdrywall.ca/services.html" />
   <meta property="og:title" content="Drywall Services | Team Drywall Ltd. Kelowna" />
   <meta property="og:description" content="Full-service drywall contractor in Kelowna, BC. Residential, commercial, repair, taping &amp; finishing, ceiling systems, and new construction." />
@@ -49,227 +49,303 @@
   }
   ]
   </script>
+  <link rel="preload" as="image" href="brand_assets/banner3.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" /></noscript>
-  
-  <style>*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Archivo',sans-serif;color:#1A1A1A;overflow-x:hidden}h1,h2,h3,h4{font-family:'Archivo',sans-serif;letter-spacing:-0.02em}.nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:#DA291C;transform:scaleX(0);transition:transform 0.2s ease}.nav-link:hover::after{transform:scaleX(1)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#f0f0f0}::-webkit-scrollbar-thumb{background:#DA291C;border-radius:3px}
-  .reveal{opacity:0;transform:translateY(36px);transition:opacity 0.7s cubic-bezier(0.22,1,0.36,1),transform 0.7s cubic-bezier(0.22,1,0.36,1)}.reveal.from-left{transform:translateX(-36px)}.reveal.from-right{transform:translateX(36px)}.reveal.visible{opacity:1!important;transform:none!important}.reveal-d1{transition-delay:0.08s}.reveal-d2{transition-delay:0.16s}
-  details summary::-webkit-details-marker{display:none}details[open] summary svg{transform:rotate(180deg)}details summary svg{transition:transform 0.25s ease}</style>
+  <style>
+    details summary::-webkit-details-marker{display:none}
+    details[open] summary svg.chevron{transform:rotate(180deg)}
+    details summary svg.chevron{transition:transform 0.25s ease}
+  </style>
 </head>
-<body class="bg-white">
+<body>
   <div id="site-topbar"></div>
   <div id="site-nav"></div>
 
-  <!-- PAGE HERO -->
-  <section class="relative bg-brand-black" style="height:280px">
-    <img src="brand_assets/banner3.jpg" alt="Professional drywall taping" class="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" />
-    <div class="absolute inset-0 flex items-center">
-      <div class="max-w-7xl mx-auto px-4 w-full">
-        <nav aria-label="Breadcrumb" class="mb-3">
-          <ol class="flex items-center gap-2 text-sm text-gray-400">
-            <li><a href="index.html" class="hover:text-white transition-colors duration-200">Home</a></li>
-            <li><span class="text-gray-600">/</span></li>
-            <li class="text-white">Services</li>
-          </ol>
-        </nav>
-        <h1 class="font-display text-5xl md:text-6xl font-700 text-white">Our Services</h1>
-        <p class="text-gray-300 mt-3 text-lg">Residential &amp; commercial drywall solutions across BC and Alberta</p>
+  <!-- ═══════════════════ PAGE HERO ═══════════════════ -->
+  <section class="relative bg-black text-white overflow-hidden" style="min-height:60vh">
+    <img src="brand_assets/banner3.jpg" alt="Professional drywall taping and finishing Kelowna" class="absolute inset-0 w-full h-full object-cover opacity-35" width="1920" height="1080" fetchpriority="high" loading="eager" decoding="async" />
+    <div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.3) 100%)"></div>
+    <div class="relative max-w-[1400px] mx-auto px-6 py-20 lg:py-28" style="min-height:60vh">
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex items-center gap-2 f-label text-[10px] text-white/60">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li class="text-white/30">/</li>
+          <li class="text-white">Services</li>
+        </ol>
+      </nav>
+      <div class="hero-label mb-6 flex items-center gap-4">
+        <span class="inline-block w-10 h-px bg-[#DA291C]"></span>
+        <span class="f-label text-[11px] text-white/70">What We Do</span>
+      </div>
+      <h1 class="hero-heading f-display text-white text-[clamp(3rem,8vw,6.5rem)] mb-6">
+        Drywall Services<br>
+        <span class="text-white/70">Kelowna Trusts.</span>
+      </h1>
+      <p class="hero-sub text-white/75 text-lg max-w-2xl leading-[1.6]">
+        Residential, commercial, repair, and finishing — the full scope of drywall work, delivered by one crew with one standard across BC and Alberta.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ INTRO (white) ═══════════════════ -->
+  <section class="bg-white py-24 lg:py-32">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-7 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">
+          <span class="inline-block w-8 h-px bg-[#DA291C] align-middle mr-3"></span>
+          Since 1990
+        </div>
+        <h2 class="f-display text-5xl lg:text-6xl text-black mb-8">
+          Quality drywall<br>
+          across every trade.
+        </h2>
+      </div>
+      <div class="lg:col-span-5 reveal reveal-d2">
+        <p class="text-[#666] text-base lg:text-lg leading-[1.75]">Team Drywall Ltd. has served Kelowna and the Okanagan for 35+ years. We specialize in residential and commercial drywall, delivering craftsmanship your clients will notice and reliability your schedule demands. Every project gets the same professional care — from a small patch to a full commercial build-out.</p>
       </div>
     </div>
   </section>
 
-  <main>
-  <!-- GENERAL SERVICE INFO -->
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="max-w-3xl mx-auto text-center mb-16">
-        <div class="flex items-center justify-center gap-3 mb-4"><div class="w-10 h-0.5 bg-brand-red"></div><span class="font-display text-sm tracking-widest text-brand-red uppercase">General Service Information</span><div class="w-10 h-0.5 bg-brand-red"></div></div>
-        <h2 class="font-display text-4xl font-700 text-brand-black mb-5">Quality Drywall Since 1990</h2>
-        <p class="text-brand-gray leading-relaxed text-base">Team Drywall Ltd. has been serving Kelowna and the surrounding Okanagan region for over 35 years. We specialize in residential and commercial drywall services, delivering craftsmanship your clients will notice and reliability your schedule demands. Every project — from a small patch to a full commercial build-out — receives the same professional care.</p>
+  <!-- ═══════════════════ 001 · RESIDENTIAL ═══════════════════ -->
+  <section id="residential" class="bg-white border-t border-black py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-5 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">001 / Residential</div>
+        <h3 class="f-display text-4xl lg:text-5xl text-black mb-6">Residential Drywall</h3>
+        <p class="text-[#666] leading-[1.75] mb-8">From new home construction to basement finishing and room renovations, we handle all residential drywall needs throughout Kelowna and the Okanagan. Our team coordinates with your builder or contractor to keep your project on schedule.</p>
+        <ul class="space-y-3 mb-8 border-t border-black/10">
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">01</span>New construction drywall supply &amp; install</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">02</span>Basement and garage conversions</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">03</span>Room additions and renovations</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">04</span>Water damage and repair</li>
+        </ul>
+        <a href="our-work.html" class="f-btn f-btn-white">
+          See Residential Portfolio
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
       </div>
-
-      <!-- Service detail cards -->
-      <div class="space-y-16">
-
-        <!-- Residential -->
-        <div class="grid md:grid-cols-2 gap-10 items-center reveal" id="residential">
-          <div>
-            <div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg></div><h3 class="font-display text-2xl font-700 text-brand-black">Residential Drywall</h3></div>
-            <p class="text-brand-gray leading-relaxed mb-4">From new home construction to basement finishing and room renovations, we handle all residential drywall needs throughout Kelowna and the Okanagan. Our team coordinates with your builder or contractor to keep your project on schedule.</p>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>New construction drywall supply &amp; install</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Basement and garage conversions</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Room additions and renovations</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Water damage and repair</li>
-            </ul>
-            <a href="our-work.html" class="inline-flex items-center gap-2 mt-5 text-sm font-display text-brand-red hover:text-brand-red-dark transition-colors duration-200 group">See residential examples in our portfolio <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-          </div>
-          <img src="brand_assets/banner1.jpg" alt="Residential drywall project Kelowna" class="rounded-xl w-full h-72 object-cover" style="box-shadow:0 8px 32px rgba(0,0,0,0.12)" loading="lazy" />
+      <div class="lg:col-span-7 reveal reveal-d2">
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner1.jpg" alt="Residential drywall Kelowna — new home construction" class="w-full h-full object-cover" width="900" height="675" loading="lazy" decoding="async" />
         </div>
-
-        <hr class="border-brand-light-gray" />
-
-        <!-- Commercial -->
-        <div class="grid md:grid-cols-2 gap-10 items-center reveal" id="commercial">
-          <img src="brand_assets/banner4.jpg" alt="Commercial drywall installation" class="rounded-xl w-full h-72 object-cover md:order-first order-last" style="box-shadow:0 8px 32px rgba(0,0,0,0.12)" loading="lazy" />
-          <div>
-            <div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18"/></svg></div><h3 class="font-display text-2xl font-700 text-brand-black">Commercial Drywall</h3></div>
-            <p class="text-brand-gray leading-relaxed mb-4">We work with general contractors, developers, and property managers on commercial projects of all sizes across BC and Alberta. Our experienced crews meet tight construction schedules without sacrificing quality.</p>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Office and retail fit-outs</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Multi-family residential</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Industrial and warehouse</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Large-scale new construction</li>
-            </ul>
-          </div>
-        </div>
-
-        <hr class="border-brand-light-gray" />
-
-        <!-- Taping & Finishing -->
-        <div class="grid md:grid-cols-2 gap-10 items-center reveal" id="taping">
-          <div>
-            <div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg></div><h3 class="font-display text-2xl font-700 text-brand-black">Taping &amp; Finishing</h3></div>
-            <p class="text-brand-gray leading-relaxed mb-4">A great finish starts with expert taping. Our finishers are trained to achieve smooth, flawless surfaces ready for paint. We offer multiple finish levels — from Level 3 to the premium Level 5 smooth coat.</p>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Level 3, 4, and 5 finishes available</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Spray, hand, and skim coat techniques</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Texture matching for repairs</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Paint-ready every time</li>
-            </ul>
-          </div>
-          <img src="brand_assets/banner3.jpg" alt="Professional drywall taping and finishing" class="rounded-xl w-full h-72 object-cover" style="box-shadow:0 8px 32px rgba(0,0,0,0.12)" loading="lazy" />
-        </div>
-
-        <hr class="border-brand-light-gray" />
-
-        <!-- Repair -->
-        <div class="grid md:grid-cols-2 gap-10 items-center reveal" id="repair">
-          <img src="brand_assets/banner2.jpg" alt="Drywall repair materials" class="rounded-xl w-full h-72 object-cover md:order-first order-last" style="box-shadow:0 8px 32px rgba(0,0,0,0.12)" loading="lazy" />
-          <div>
-            <div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63"/></svg></div><h3 class="font-display text-2xl font-700 text-brand-black">Drywall Repair</h3></div>
-            <p class="text-brand-gray leading-relaxed mb-4">Holes, cracks, water damage, or screw pops — we fix it all, and we blend the repair seamlessly so you can't tell where the patch ended and the original began. Emergency repairs available with fast turnaround.</p>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Patch and fill — any size</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Water and flood damage repair</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Crack and settlement repair</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Emergency response available</li>
-            </ul>
-          </div>
-        </div>
-
-        <hr class="border-brand-light-gray" />
-
-        <!-- Ceiling Systems -->
-        <div class="grid md:grid-cols-2 gap-10 items-center reveal" id="ceilings">
-          <div>
-            <div class="flex items-center gap-3 mb-4"><div class="w-8 h-8 bg-brand-red rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21"/></svg></div><h3 class="font-display text-2xl font-700 text-brand-black">Ceiling Systems</h3></div>
-            <p class="text-brand-gray leading-relaxed mb-4">We install a full range of ceiling types — from standard flat drywall ceilings to suspended acoustic systems, coffered designs, and custom bulkheads. We coordinate around HVAC, lighting, and sprinkler systems.</p>
-            <ul class="space-y-2">
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Suspended / T-bar ceiling systems</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Coffered and tray ceilings</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Bulkheads and soffits</li>
-              <li class="flex items-start gap-2 text-sm text-brand-gray"><span class="text-brand-red mt-1">✓</span>Acoustic and fire-rated assemblies</li>
-            </ul>
-          </div>
-          <img src="brand_assets/banner4.jpg" alt="Commercial ceiling system installation" class="rounded-xl w-full h-72 object-cover" style="box-shadow:0 8px 32px rgba(0,0,0,0.12)" loading="lazy" />
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="py-16 bg-brand-light-gray">
-    <div class="max-w-3xl mx-auto px-4">
-      <div class="text-center mb-12">
-        <div class="flex items-center justify-center gap-3 mb-4"><div class="w-10 h-0.5 bg-brand-red"></div><span class="font-display text-sm tracking-widest text-brand-red uppercase">FAQ</span><div class="w-10 h-0.5 bg-brand-red"></div></div>
-        <h2 class="font-display text-4xl font-700 text-brand-black">Common Questions</h2>
+  <!-- ═══════════════════ 002 · COMMERCIAL (black) ═══════════════════ -->
+  <section id="commercial" class="bg-black text-white py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-7 reveal">
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner4.jpg" alt="Commercial drywall installation Kelowna" class="w-full h-full object-cover" width="900" height="675" loading="lazy" decoding="async" />
+        </div>
       </div>
-      <div class="space-y-4">
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            Do you serve areas outside Kelowna?
-            <svg class="w-5 h-5 flex-shrink-0 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">Yes — Team Drywall Ltd. operates throughout BC and Alberta. We regularly work in the Okanagan region and take on projects province-wide for larger commercial clients.</p>
-        </details>
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            How do I get a quote?
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">Fill out our <a href="quote.html" class="text-brand-red hover:underline">online quote request form</a> or call us directly at <a href="tel:2508072700" class="text-brand-red hover:underline">250-807-2700</a>. We respond promptly and can typically provide an estimate within 1–2 business days.</p>
-        </details>
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            What payment methods do you accept?
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">We accept cheque and email money transfer (Interac e-Transfer).</p>
-        </details>
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            Do you do emergency drywall repairs?
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">Yes. We understand that water damage and other emergencies can't wait. Call us at <a href="tel:2508072700" class="text-brand-red hover:underline">250-807-2700</a> and we'll do our best to respond quickly.</p>
-        </details>
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            Are you licensed and insured in BC?
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">Yes. Team Drywall Ltd. is fully licensed and insured to operate in British Columbia and Alberta. We carry appropriate liability coverage on all projects, giving you full peace of mind.</p>
-        </details>
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            How long does a typical drywall project take?
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">It depends on the scope. A small repair can be done in a single day. A full basement or room renovation typically takes 3–5 days. Large commercial projects are scheduled around your construction timeline. We always give you a clear schedule before we start — and we stick to it.</p>
-        </details>
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            What finish level do you recommend for my home?
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">For most residential applications, Level 4 is standard and suits flat or matte paints. For high-sheen paints, accent walls, or premium interiors, we recommend Level 5 — the smoothest possible finish. We'll advise you during your free quote based on your paint and lighting plan.</p>
-        </details>
-        <details class="bg-white rounded-xl overflow-hidden" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <summary class="px-6 py-5 font-display font-500 text-brand-black cursor-pointer flex items-center justify-between hover:text-brand-red transition-colors duration-200 list-none">
-            Can you match existing texture on a repair?
-            <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <p class="px-6 pb-5 text-brand-gray text-sm leading-relaxed">Absolutely. Texture matching is one of our specialties. Whether your walls have orange peel, knockdown, skip trowel, or a smooth finish, our finishers blend repairs so cleanly you won't be able to tell where the patch is.</p>
-        </details>
+      <div class="lg:col-span-5 reveal reveal-d2">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">002 / Commercial</div>
+        <h3 class="f-display text-4xl lg:text-5xl text-white mb-6">Commercial Drywall</h3>
+        <p class="text-white/70 leading-[1.75] mb-8">We work with general contractors, developers, and property managers on commercial projects of all sizes across BC and Alberta. Our experienced crews meet tight construction schedules without sacrificing quality.</p>
+        <ul class="space-y-3 mb-8 border-t border-white/15">
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">01</span>Office and retail fit-outs</li>
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">02</span>Multi-family residential</li>
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">03</span>Industrial and warehouse</li>
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">04</span>Large-scale new construction</li>
+        </ul>
+        <a href="quote.html" class="f-btn f-btn-ghost">
+          Request Commercial Quote
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="py-16 bg-brand-red">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="font-display text-4xl font-700 text-white mb-4">Ready for a Free Quote?</h2>
-      <p class="text-white/90 mb-8">Tell us about your project and we'll get back to you fast.</p>
-      <a href="quote.html" class="inline-block font-display font-600 tracking-wide px-8 py-4 bg-white text-brand-red rounded hover:bg-gray-100 active:scale-95 transition-all duration-200">REQUEST A FREE QUOTE</a>
+  <!-- ═══════════════════ 003 · TAPING (white) ═══════════════════ -->
+  <section id="taping" class="bg-white py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-5 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">003 / Finishing</div>
+        <h3 class="f-display text-4xl lg:text-5xl text-black mb-6">Taping &amp; Finishing</h3>
+        <p class="text-[#666] leading-[1.75] mb-8">A great finish starts with expert taping. Our finishers are trained to achieve smooth, flawless surfaces ready for paint. We offer multiple finish levels — from Level 3 up to the premium Level 5 smooth coat.</p>
+        <ul class="space-y-3 mb-8 border-t border-black/10">
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">01</span>Level 3, 4, and 5 finishes available</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">02</span>Spray, hand, and skim coat techniques</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">03</span>Texture matching for repairs</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">04</span>Paint-ready every time</li>
+        </ul>
+      </div>
+      <div class="lg:col-span-7 reveal reveal-d2">
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner3.jpg" alt="Level 5 drywall taping and finishing Kelowna" class="w-full h-full object-cover" width="900" height="675" loading="lazy" decoding="async" />
+        </div>
+      </div>
     </div>
   </section>
-  </main>
+
+  <!-- ═══════════════════ 004 · REPAIR (black) ═══════════════════ -->
+  <section id="repair" class="bg-black text-white py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-7 reveal">
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner2.jpg" alt="Drywall repair Kelowna — texture matching and patch work" class="w-full h-full object-cover" width="900" height="675" loading="lazy" decoding="async" />
+        </div>
+      </div>
+      <div class="lg:col-span-5 reveal reveal-d2">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">004 / Repairs</div>
+        <h3 class="f-display text-4xl lg:text-5xl text-white mb-6">Drywall Repair</h3>
+        <p class="text-white/70 leading-[1.75] mb-8">Holes, cracks, water damage, or screw pops — we fix it all, and we blend the repair seamlessly so you can't tell where the patch ended and the original began. Emergency repairs available with fast turnaround.</p>
+        <ul class="space-y-3 mb-8 border-t border-white/15">
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">01</span>Patch and fill — any size</li>
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">02</span>Water and flood damage repair</li>
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">03</span>Crack and settlement repair</li>
+          <li class="flex items-start gap-3 py-3 border-b border-white/15 text-sm text-white/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">04</span>Emergency response available</li>
+        </ul>
+        <a href="tel:2508072700" class="f-btn f-btn-red">
+          Call for Emergency Repair
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ 005 · CEILINGS (white) ═══════════════════ -->
+  <section id="ceilings" class="bg-white py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-5 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">005 / Ceilings</div>
+        <h3 class="f-display text-4xl lg:text-5xl text-black mb-6">Ceiling Systems</h3>
+        <p class="text-[#666] leading-[1.75] mb-8">We install a full range of ceiling types — from standard flat drywall ceilings to suspended acoustic systems, coffered designs, and custom bulkheads. We coordinate around HVAC, lighting, and sprinkler systems.</p>
+        <ul class="space-y-3 mb-8 border-t border-black/10">
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">01</span>Suspended / T-bar ceiling systems</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">02</span>Coffered and tray ceilings</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">03</span>Bulkheads and soffits</li>
+          <li class="flex items-start gap-3 py-3 border-b border-black/10 text-sm text-black/80"><span class="f-label text-[10px] text-[#DA291C] mt-0.5">04</span>Acoustic and fire-rated assemblies</li>
+        </ul>
+      </div>
+      <div class="lg:col-span-7 reveal reveal-d2">
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner4.jpg" alt="Commercial ceiling system installation Kelowna" class="w-full h-full object-cover" width="900" height="675" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FAQ (black) ═══════════════════ -->
+  <section class="bg-black text-white py-24 lg:py-32">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-4 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">
+          <span class="inline-block w-8 h-px bg-[#DA291C] align-middle mr-3"></span>
+          006 / FAQ
+        </div>
+        <h2 class="f-display text-5xl lg:text-6xl text-white mb-6">
+          Questions,<br>answered.
+        </h2>
+        <p class="text-white/60 mb-8 leading-[1.7]">Common questions from Kelowna homeowners and commercial clients about our drywall services. Still curious? Call us — we'll talk through it.</p>
+        <a href="tel:2508072700" class="f-btn f-btn-red">
+          250 · 807 · 2700
+        </a>
+      </div>
+      <div class="lg:col-span-8 reveal reveal-d2">
+        <div class="border-t border-white/15">
+          <details class="border-b border-white/15 group">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              Do you serve areas outside Kelowna?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">Yes — Team Drywall Ltd. operates throughout BC and Alberta. We regularly work in the Okanagan region including West Kelowna, Lake Country, Vernon, and Penticton, and take on projects province-wide for larger commercial clients.</p>
+          </details>
+          <details class="border-b border-white/15">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              How do I get a drywall quote?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">Fill out our <a href="quote.html" class="text-[#DA291C] hover:underline">online quote request form</a> or call us directly at <a href="tel:2508072700" class="text-[#DA291C] hover:underline">250-807-2700</a>. We respond promptly and can typically provide an estimate within 1–2 business days.</p>
+          </details>
+          <details class="border-b border-white/15">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              What payment methods do you accept?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">We accept cheque and email money transfer (Interac e-Transfer).</p>
+          </details>
+          <details class="border-b border-white/15">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              Do you do emergency drywall repairs?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">Yes. We understand that water damage and other emergencies can't wait. Call us at <a href="tel:2508072700" class="text-[#DA291C] hover:underline">250-807-2700</a> and we'll do our best to respond quickly.</p>
+          </details>
+          <details class="border-b border-white/15">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              Are you licensed and insured in BC?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">Yes. Team Drywall Ltd. is fully licensed and insured to operate in British Columbia and Alberta. We carry appropriate liability coverage on all projects, giving you full peace of mind.</p>
+          </details>
+          <details class="border-b border-white/15">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              How long does a typical drywall project take?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">It depends on the scope. A small repair can be done in a single day. A full basement or room renovation typically takes 3–5 days. Large commercial projects are scheduled around your construction timeline. We always give you a clear schedule before we start — and we stick to it.</p>
+          </details>
+          <details class="border-b border-white/15">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              What finish level do you recommend for my home?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">For most residential applications, Level 4 is standard and suits flat or matte paints. For high-sheen paints, accent walls, or premium interiors, we recommend Level 5 — the smoothest possible finish. We'll advise you during your free quote based on your paint and lighting plan.</p>
+          </details>
+          <details class="border-b border-white/15">
+            <summary class="py-6 font-semibold text-lg cursor-pointer flex items-center justify-between list-none hover:text-[#DA291C] transition-colors">
+              Can you match existing texture on a repair?
+              <svg class="chevron w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </summary>
+            <p class="pb-6 text-white/70 leading-[1.75]">Absolutely. Texture matching is one of our specialties. Whether your walls have orange peel, knockdown, skip trowel, or a smooth finish, our finishers blend repairs so cleanly you won't be able to tell where the patch is.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CTA close ═══════════════════ -->
+  <section class="relative bg-white py-24 lg:py-32 overflow-hidden border-t border-black">
+    <div class="relative max-w-[1400px] mx-auto px-6 text-center reveal">
+      <div class="f-label text-[11px] text-[#DA291C] mb-8 inline-flex items-center">
+        <span class="inline-block w-8 h-px bg-[#DA291C] mr-3"></span>
+        Start Your Project
+        <span class="inline-block w-8 h-px bg-[#DA291C] ml-3"></span>
+      </div>
+      <h2 class="f-display text-5xl md:text-7xl text-black mb-8 max-w-3xl mx-auto">
+        Ready to start?<br>
+        We're ready too.
+      </h2>
+      <p class="text-[#666] text-lg mb-12 max-w-xl mx-auto leading-[1.6]">
+        Free quote within one business day. Serving Kelowna, the Okanagan, and Alberta.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="quote.html" class="f-btn f-btn-red">
+          Request a Free Quote
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="tel:2508072700" class="f-btn f-btn-white">
+          250 · 807 · 2700
+        </a>
+      </div>
+    </div>
+  </section>
 
   <div id="site-widgets"></div>
   <div id="site-footer"></div>
   <script src="components.js"></script>
   <script>
-    const revealEls = document.querySelectorAll('.reveal');
     const ro = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    revealEls.forEach(el => ro.observe(el));
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
   </script>
 </body>
 </html>

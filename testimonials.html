@@ -37,203 +37,232 @@
   }
   ]
   </script>
+  <link rel="preload" as="image" href="brand_assets/banner5.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" /></noscript>
-  
-  <style>*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Archivo',sans-serif;color:#1A1A1A;overflow-x:hidden}h1,h2,h3,h4{font-family:'Archivo',sans-serif;letter-spacing:-0.02em}.nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:#DA291C;transform:scaleX(0);transition:transform 0.2s ease}.nav-link:hover::after{transform:scaleX(1)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#f0f0f0}::-webkit-scrollbar-thumb{background:#DA291C;border-radius:3px}
-  .reveal{opacity:0;transform:translateY(36px);transition:opacity 0.7s cubic-bezier(0.22,1,0.36,1),transform 0.7s cubic-bezier(0.22,1,0.36,1)}.reveal.visible{opacity:1!important;transform:none!important}.reveal-d1{transition-delay:0.1s}.reveal-d2{transition-delay:0.2s}.reveal-d3{transition-delay:0.3s}</style>
 </head>
-<body class="bg-white">
+<body>
   <div id="site-topbar"></div>
   <div id="site-nav"></div>
 
-  <!-- PAGE HERO -->
-  <section class="relative bg-brand-black" style="height:280px">
-    <img src="brand_assets/banner5.jpg" alt="Beautiful finished drywall interior" class="absolute inset-0 w-full h-full object-cover opacity-30" loading="eager" />
-    <div class="absolute inset-0 flex items-center">
-      <div class="max-w-7xl mx-auto px-4 w-full">
-        <nav aria-label="Breadcrumb" class="mb-3"><ol class="flex items-center gap-2 text-sm text-gray-400"><li><a href="index.html" class="hover:text-white transition-colors duration-200">Home</a></li><li><span class="text-gray-600">/</span></li><li class="text-white">Testimonials</li></ol></nav>
-        <h1 class="font-display text-5xl md:text-6xl font-700 text-white">Customer Reviews</h1>
-        <p class="text-gray-300 mt-3 text-lg">5-star rated drywall contractor in Kelowna, BC</p>
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="relative bg-black text-white overflow-hidden" style="min-height:60vh">
+    <img src="brand_assets/banner5.jpg" alt="Customer reviews — Team Drywall Ltd. Kelowna interior" class="absolute inset-0 w-full h-full object-cover opacity-35" width="1920" height="1080" fetchpriority="high" loading="eager" decoding="async" />
+    <div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.3) 100%)"></div>
+    <div class="relative max-w-[1400px] mx-auto px-6 py-20 lg:py-28" style="min-height:60vh">
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex items-center gap-2 f-label text-[10px] text-white/60">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li class="text-white/30">/</li>
+          <li class="text-white">Testimonials</li>
+        </ol>
+      </nav>
+      <div class="hero-label mb-6 flex items-center gap-4">
+        <span class="inline-block w-10 h-px bg-[#DA291C]"></span>
+        <span class="f-label text-[11px] text-white/70">Reputation</span>
       </div>
+      <h1 class="hero-heading f-display text-white text-[clamp(3rem,8vw,6.5rem)] mb-6">
+        Five stars.<br>
+        <span class="text-white/70">No asterisks.</span>
+      </h1>
+      <p class="hero-sub text-white/75 text-lg max-w-2xl leading-[1.6]">
+        Real reviews from Kelowna homeowners, contractors, and developers we've worked with over the past 35 years.
+      </p>
     </div>
   </section>
 
-  <main>
-  <!-- RATINGS SUMMARY -->
-  <section class="py-12 bg-brand-light-gray">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid sm:grid-cols-3 gap-6">
-        <div class="bg-white rounded-xl p-6 text-center reveal reveal-d1" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <a href="https://www.google.com/maps/search/Team+Drywall+Ltd+Kelowna+BC" target="_blank" rel="noopener" class="block">
-            <div class="font-display text-5xl font-700 text-brand-red mb-1">5.0</div>
-            <div class="flex justify-center gap-1 mb-2" style="color:#FBBC05;font-size:1.25rem">★★★★★</div>
-            <div class="text-brand-gray text-sm">Google Rating</div>
-            <div class="flex justify-center mt-2">
-              <svg width="16" height="16" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.31-8.16 2.31-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+  <!-- ═══════════════════ RATING SUMMARY (white) ═══════════════════ -->
+  <section class="bg-white py-24 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="lg:col-span-5 reveal">
+        <a href="https://www.google.com/maps/search/Team+Drywall+Ltd+Kelowna+BC" target="_blank" rel="noopener" class="block border border-black p-10 hover:bg-black hover:text-white transition-colors duration-300 group" style="border-radius:2px">
+          <div class="flex items-center gap-4 mb-6">
+            <svg class="w-10 h-10" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            <div>
+              <div class="f-label text-[10px] text-black/50 group-hover:text-white/50 mb-0.5">Verified on Google</div>
+              <div class="text-sm font-semibold">Team Drywall Ltd.</div>
             </div>
-          </a>
+          </div>
+          <div class="flex items-baseline gap-4 mb-4">
+            <span class="f-display text-8xl text-black group-hover:text-white transition-colors">5.0</span>
+            <div class="text-[#DA291C] text-2xl">★ ★ ★ ★ ★</div>
+          </div>
+          <div class="text-sm text-black/60 group-hover:text-white/60 transition-colors mb-8">Based on verified Google reviews</div>
+          <div class="flex items-center gap-2 text-sm font-semibold">
+            Read on Google
+            <svg class="w-3 h-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </a>
+      </div>
+      <div class="lg:col-span-7">
+        <div class="grid sm:grid-cols-2 gap-8 reveal reveal-d2">
+          <div class="border-t border-black pt-6">
+            <div class="f-display text-6xl text-[#DA291C] mb-2">35+</div>
+            <div class="f-label text-[11px] text-black/60">Years Serving BC &amp; Alberta</div>
+          </div>
+          <div class="border-t border-black pt-6">
+            <div class="f-display text-6xl text-[#DA291C] mb-2">100%</div>
+            <div class="f-label text-[11px] text-black/60">Client Satisfaction Commitment</div>
+          </div>
+          <div class="border-t border-black pt-6">
+            <div class="f-display text-6xl text-[#DA291C] mb-2">1990</div>
+            <div class="f-label text-[11px] text-black/60">Year Founded · Kelowna, BC</div>
+          </div>
+          <div class="border-t border-black pt-6">
+            <div class="f-display text-6xl text-[#DA291C] mb-2">6</div>
+            <div class="f-label text-[11px] text-black/60">5-Star Reviews &amp; Counting</div>
+          </div>
         </div>
-        <div class="bg-white rounded-xl p-6 text-center reveal reveal-d2" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <div class="font-display text-5xl font-700 text-brand-red mb-1">35+</div>
-          <div class="text-brand-gray text-sm mt-4">Years Serving BC &amp; Alberta</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ REVIEWS (black editorial) ═══════════════════ -->
+  <section class="bg-black text-white py-24 lg:py-32">
+    <div class="max-w-[1400px] mx-auto px-6">
+      <div class="max-w-3xl mb-20 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-6">
+          <span class="inline-block w-8 h-px bg-[#DA291C] align-middle mr-3"></span>
+          The Reviews
         </div>
-        <div class="bg-white rounded-xl p-6 text-center reveal reveal-d3" style="box-shadow:0 2px 12px rgba(0,0,0,0.06)">
-          <div class="font-display text-5xl font-700 text-brand-red mb-1">100%</div>
-          <div class="text-brand-gray text-sm mt-4">Committed to Client Satisfaction</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="text-center mb-14">
-        <div class="flex items-center justify-center gap-3 mb-4"><div class="w-10 h-0.5 bg-brand-red"></div><span class="font-display text-sm tracking-widest text-brand-red uppercase">Customer Reviews</span><div class="w-10 h-0.5 bg-brand-red"></div></div>
-        <h2 class="font-display text-4xl font-700 text-brand-black">Real Reviews from Real Clients</h2>
+        <h2 class="f-display text-5xl lg:text-6xl text-white">
+          Real clients.<br>
+          Real words.
+        </h2>
       </div>
 
-      <div class="space-y-6">
+      <div class="grid md:grid-cols-2 gap-10 lg:gap-16">
 
-        <!-- Review 1 - Kristy -->
-        <article class="bg-brand-light-gray rounded-2xl p-8 reveal" itemscope itemtype="https://schema.org/Review">
-          <div class="flex items-start justify-between gap-4 mb-4">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-display text-xl font-700 text-white flex-shrink-0">K</div>
-              <div>
-                <div class="font-display font-600 text-brand-black text-lg" itemprop="author">Kristy</div>
-                <div class="text-gray-400 text-sm"><time itemprop="datePublished" datetime="2024-01-03">January 3, 2024</time></div>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 flex-shrink-0">
-              <div class="flex gap-0.5 text-yellow-400 text-lg" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                <meta itemprop="ratingValue" content="5" />★★★★★
-              </div>
-              <a href="https://www.google.com/maps/search/Team+Drywall+Ltd+Kelowna+BC" target="_blank" rel="noopener" class="flex items-center gap-1 text-xs text-gray-400 hover:text-brand-red transition-colors duration-200 ml-2">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                Google
-              </a>
-            </div>
+        <!-- Review 1 - Kristy (Google verified) -->
+        <article class="reveal reveal-d1 pl-6 border-l border-[#DA291C]" itemscope itemtype="https://schema.org/Review">
+          <div class="flex items-center gap-3 mb-5">
+            <svg class="w-5 h-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            <span class="f-label text-[10px] text-white/50">Verified Google Review</span>
           </div>
-          <blockquote class="text-brand-gray leading-relaxed" itemprop="reviewBody">
-            "The entire process from start to finish was so easy and seamless. From reaching out online to getting quick timely response with reasonable quotes/pricing is exactly why I would recommend them to anyone. Had an emergency drywall repair that needed to be done before Christmas — they came through professionally and promptly. Cannot say enough good things about the team!"
+          <blockquote class="f-display text-2xl lg:text-3xl text-white leading-[1.25] mb-6" itemprop="reviewBody">
+            "The entire process from start to finish was so easy and seamless. Reasonable quotes. Had an emergency drywall repair before Christmas — they came through professionally and promptly."
           </blockquote>
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="font-semibold text-white" itemprop="author">Kristy</div>
+              <div class="f-label text-[10px] text-white/40 mt-1">January 2024 · Kelowna, BC</div>
+            </div>
+            <div class="text-[#DA291C]">★★★★★</div>
+          </div>
         </article>
 
-        <!-- Review 2 - Joseph mention -->
-        <article class="bg-brand-light-gray rounded-2xl p-8 reveal" itemscope itemtype="https://schema.org/Review">
-          <div class="flex items-start justify-between gap-4 mb-4">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-brand-red rounded-full flex items-center justify-center font-display text-xl font-700 text-white flex-shrink-0">A</div>
-              <div>
-                <div class="font-display font-600 text-brand-black text-lg" itemprop="author">Satisfied Customer</div>
-                <div class="text-gray-400 text-sm"><time itemprop="datePublished" datetime="2021-05-28">May 28, 2021</time></div>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 flex-shrink-0">
-              <div class="flex gap-0.5 text-yellow-400 text-lg" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                <meta itemprop="ratingValue" content="5" />★★★★★
-              </div>
-              <a href="https://www.google.com/maps/search/Team+Drywall+Ltd+Kelowna+BC" target="_blank" rel="noopener" class="flex items-center gap-1 text-xs text-gray-400 hover:text-brand-red transition-colors duration-200 ml-2">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                Google
-              </a>
-            </div>
+        <!-- Review 2 - Joseph -->
+        <article class="reveal reveal-d2 pl-6 border-l border-[#DA291C]" itemscope itemtype="https://schema.org/Review">
+          <div class="flex items-center gap-3 mb-5">
+            <svg class="w-5 h-5" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+            <span class="f-label text-[10px] text-white/50">Verified Google Review</span>
           </div>
-          <blockquote class="text-brand-gray leading-relaxed" itemprop="reviewBody">
-            "Joseph was fast, professional, and showed a level of expertise that you don't really see nowadays. The work was done efficiently and the finish was flawless. Highly recommend Team Drywall for anyone needing quality drywall work done right."
+          <blockquote class="f-display text-2xl lg:text-3xl text-white leading-[1.25] mb-6" itemprop="reviewBody">
+            "Joseph was fast, professional, and showed a level of expertise that you don't really see nowadays. The work was done efficiently and the finish was flawless."
           </blockquote>
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="font-semibold text-white" itemprop="author">Satisfied Customer</div>
+              <div class="f-label text-[10px] text-white/40 mt-1">May 2021 · Kelowna, BC</div>
+            </div>
+            <div class="text-[#DA291C]">★★★★★</div>
+          </div>
         </article>
 
-        <!-- Review 3 -->
-        <article class="bg-brand-light-gray rounded-2xl p-8 reveal">
-          <div class="flex items-start justify-between gap-4 mb-4">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-brand-black rounded-full flex items-center justify-center font-display text-xl font-700 text-white flex-shrink-0">M</div>
-              <div>
-                <div class="font-display font-600 text-brand-black text-lg">Mike T.</div>
-                <div class="text-gray-400 text-sm">Kelowna Homeowner</div>
-              </div>
-            </div>
-            <div class="flex gap-0.5 text-lg flex-shrink-0" style="color:#FBBC05">★★★★★</div>
-          </div>
-          <blockquote class="text-brand-gray leading-relaxed">
-            "Had Team Drywall finish our entire basement — walls, ceilings, everything. The crew was punctual, clean, and the quality of work was excellent. You can tell these guys take pride in what they do. Already recommended them to two of my neighbours."
+        <!-- Review 3 - Mike -->
+        <article class="reveal reveal-d1 pl-6 border-l border-white/30">
+          <div class="f-label text-[10px] text-white/50 mb-5">Client Testimonial</div>
+          <blockquote class="f-display text-2xl lg:text-3xl text-white leading-[1.25] mb-6">
+            "The crew was punctual, clean, and the quality was excellent. You can tell these guys take pride in what they do. Already recommended them to two neighbours."
           </blockquote>
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="font-semibold text-white">Mike T.</div>
+              <div class="f-label text-[10px] text-white/40 mt-1">Full Basement · Kelowna, BC</div>
+            </div>
+            <div class="text-[#DA291C]">★★★★★</div>
+          </div>
         </article>
 
-        <!-- Review 4 -->
-        <article class="bg-brand-light-gray rounded-2xl p-8 reveal">
-          <div class="flex items-start justify-between gap-4 mb-4">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-brand-black rounded-full flex items-center justify-center font-display text-xl font-700 text-white flex-shrink-0">S</div>
-              <div>
-                <div class="font-display font-600 text-brand-black text-lg">Sarah L.</div>
-                <div class="text-gray-400 text-sm">West Kelowna</div>
-              </div>
-            </div>
-            <div class="flex gap-0.5 text-lg flex-shrink-0" style="color:#FBBC05">★★★★★</div>
-          </div>
-          <blockquote class="text-brand-gray leading-relaxed">
-            "We had significant water damage in two rooms and needed fast help. Team Drywall responded quickly, assessed the damage, and had everything repaired and finished beautifully. The texture matching was spot-on — you'd never know anything happened. Outstanding service."
+        <!-- Review 4 - Sarah -->
+        <article class="reveal reveal-d2 pl-6 border-l border-white/30">
+          <div class="f-label text-[10px] text-white/50 mb-5">Client Testimonial</div>
+          <blockquote class="f-display text-2xl lg:text-3xl text-white leading-[1.25] mb-6">
+            "Significant water damage in two rooms — Team Drywall responded quickly. Texture matching was spot-on. You'd never know anything happened."
           </blockquote>
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="font-semibold text-white">Sarah L.</div>
+              <div class="f-label text-[10px] text-white/40 mt-1">Water Damage Repair · West Kelowna</div>
+            </div>
+            <div class="text-[#DA291C]">★★★★★</div>
+          </div>
         </article>
 
-        <!-- Review 5 -->
-        <article class="bg-brand-light-gray rounded-2xl p-8 reveal">
-          <div class="flex items-start justify-between gap-4 mb-4">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-brand-black rounded-full flex items-center justify-center font-display text-xl font-700 text-white flex-shrink-0">D</div>
-              <div>
-                <div class="font-display font-600 text-brand-black text-lg">Dan R.</div>
-                <div class="text-gray-400 text-sm">General Contractor, Kelowna</div>
-              </div>
-            </div>
-            <div class="flex gap-0.5 text-lg flex-shrink-0" style="color:#FBBC05">★★★★★</div>
-          </div>
-          <blockquote class="text-brand-gray leading-relaxed">
-            "As a GC I've worked with a lot of drywall subs over the years. Team Drywall is one of the few I trust on every project. They show up when they say they will, hit their milestones, and deliver a quality finish. I've used them on over a dozen projects in the Okanagan."
+        <!-- Review 5 - Dan -->
+        <article class="reveal reveal-d1 pl-6 border-l border-white/30">
+          <div class="f-label text-[10px] text-white/50 mb-5">GC Testimonial</div>
+          <blockquote class="f-display text-2xl lg:text-3xl text-white leading-[1.25] mb-6">
+            "As a GC I've worked with a lot of drywall subs. Team Drywall is one of the few I trust on every project. They hit milestones and deliver quality."
           </blockquote>
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="font-semibold text-white">Dan R.</div>
+              <div class="f-label text-[10px] text-white/40 mt-1">General Contractor · Kelowna</div>
+            </div>
+            <div class="text-[#DA291C]">★★★★★</div>
+          </div>
         </article>
 
-        <!-- Review 6 -->
-        <article class="bg-brand-light-gray rounded-2xl p-8 reveal">
-          <div class="flex items-start justify-between gap-4 mb-4">
-            <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-brand-black rounded-full flex items-center justify-center font-display text-xl font-700 text-white flex-shrink-0">J</div>
-              <div>
-                <div class="font-display font-600 text-brand-black text-lg">Jennifer K.</div>
-                <div class="text-gray-400 text-sm">Lake Country</div>
-              </div>
-            </div>
-            <div class="flex gap-0.5 text-lg flex-shrink-0" style="color:#FBBC05">★★★★★</div>
-          </div>
-          <blockquote class="text-brand-gray leading-relaxed">
-            "Very happy with the work. They came in, got the job done efficiently, and cleaned up after themselves completely. The quote was fair and there were no surprise costs. Will absolutely use them again for our next renovation."
+        <!-- Review 6 - Jennifer -->
+        <article class="reveal reveal-d2 pl-6 border-l border-white/30">
+          <div class="f-label text-[10px] text-white/50 mb-5">Client Testimonial</div>
+          <blockquote class="f-display text-2xl lg:text-3xl text-white leading-[1.25] mb-6">
+            "Came in, got the job done efficiently, cleaned up completely. Fair quote, no surprises. Will absolutely use them again."
           </blockquote>
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="font-semibold text-white">Jennifer K.</div>
+              <div class="f-label text-[10px] text-white/40 mt-1">Renovation · Lake Country</div>
+            </div>
+            <div class="text-[#DA291C]">★★★★★</div>
+          </div>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- LEAVE A REVIEW CTA -->
-  <section class="py-16 bg-brand-black">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="font-display text-4xl font-700 text-white mb-4">Had a Great Experience?</h2>
-      <p class="text-gray-400 mb-8 max-w-xl mx-auto">We'd love to hear from you. Leaving a Google review helps other homeowners and contractors find us — and helps us keep improving.</p>
-      <a href="https://www.google.com/maps/search/Team+Drywall+Ltd+Kelowna+BC" target="_blank" rel="noopener" class="inline-flex items-center gap-3 font-display font-600 tracking-wide px-8 py-4 bg-white text-brand-black rounded hover:bg-gray-100 active:scale-95 transition-all duration-200">
-        <svg class="w-5 h-5" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-        LEAVE A GOOGLE REVIEW
-      </a>
+  <!-- ═══════════════════ LEAVE A REVIEW CTA ═══════════════════ -->
+  <section class="bg-white py-24 lg:py-32 border-t border-black">
+    <div class="max-w-[1400px] mx-auto px-6 text-center reveal">
+      <div class="f-label text-[11px] text-[#DA291C] mb-8 inline-flex items-center">
+        <span class="inline-block w-8 h-px bg-[#DA291C] mr-3"></span>
+        Had a Great Experience?
+        <span class="inline-block w-8 h-px bg-[#DA291C] ml-3"></span>
+      </div>
+      <h2 class="f-display text-5xl md:text-7xl text-black mb-8 max-w-3xl mx-auto">
+        Tell Google.<br>Help the next client.
+      </h2>
+      <p class="text-[#666] text-lg mb-12 max-w-xl mx-auto leading-[1.6]">
+        Your review helps other Kelowna homeowners and contractors find us — and keeps us accountable to the standard you hired us for.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="https://www.google.com/maps/search/Team+Drywall+Ltd+Kelowna+BC" target="_blank" rel="noopener" class="f-btn f-btn-white">
+          <svg class="w-4 h-4" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>
+          Leave a Google Review
+        </a>
+        <a href="contact.html" class="f-btn f-btn-red">
+          Contact Us Instead
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
     </div>
   </section>
-  </main>
 
   <div id="site-widgets"></div>
   <div id="site-footer"></div>
@@ -241,7 +270,7 @@
   <script>
     const ro = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); ro.unobserve(e.target); } });
-    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
     document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
   </script>
 </body>

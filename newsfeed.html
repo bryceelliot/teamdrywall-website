@@ -57,144 +57,220 @@
   }
   ]
   </script>
+  <link rel="preload" as="image" href="brand_assets/banner2.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" /></noscript>
-  
-  <style>*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Archivo',sans-serif;color:#1A1A1A;overflow-x:hidden}h1,h2,h3,h4{font-family:'Archivo',sans-serif;letter-spacing:-0.02em}.nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:#DA291C;transform:scaleX(0);transition:transform 0.2s ease}.nav-link:hover::after{transform:scaleX(1)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#f0f0f0}::-webkit-scrollbar-thumb{background:#DA291C;border-radius:3px}
-  .reveal{opacity:0;transform:translateY(36px);transition:opacity 0.7s cubic-bezier(0.22,1,0.36,1),transform 0.7s cubic-bezier(0.22,1,0.36,1)}.reveal.visible{opacity:1!important;transform:none!important}.reveal-d1{transition-delay:0.1s}.reveal-d2{transition-delay:0.2s}
-  .article-body{max-height:0;overflow:hidden;transition:max-height 0.5s ease}.article-body.open{max-height:1200px}</style>
 </head>
-<body class="bg-white">
+<body>
   <div id="site-topbar"></div>
   <div id="site-nav"></div>
 
-  <!-- PAGE HERO -->
-  <section class="relative bg-brand-black" style="height:240px">
-    <img src="brand_assets/banner2.jpg" alt="Drywall materials" class="absolute inset-0 w-full h-full object-cover opacity-25" loading="eager" />
-    <div class="absolute inset-0 flex items-center">
-      <div class="max-w-7xl mx-auto px-4 w-full">
-        <nav aria-label="Breadcrumb" class="mb-3"><ol class="flex items-center gap-2 text-sm text-gray-400"><li><a href="index.html" class="hover:text-white transition-colors duration-200">Home</a></li><li><span class="text-gray-600">/</span></li><li class="text-white">Newsfeed</li></ol></nav>
-        <h1 class="font-display text-5xl md:text-6xl font-700 text-white">Newsfeed</h1>
-        <p class="text-gray-300 mt-2">Tips, updates, and industry news from the Team Drywall crew</p>
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="relative bg-black text-white overflow-hidden" style="min-height:55vh">
+    <img src="brand_assets/banner2.jpg" alt="Drywall tips and news from Team Drywall Kelowna" class="absolute inset-0 w-full h-full object-cover opacity-30" width="1920" height="1080" fetchpriority="high" loading="eager" decoding="async" />
+    <div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.3) 100%)"></div>
+    <div class="relative max-w-[1400px] mx-auto px-6 py-20 lg:py-28" style="min-height:55vh">
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol class="flex items-center gap-2 f-label text-[10px] text-white/60">
+          <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+          <li class="text-white/30">/</li>
+          <li class="text-white">Newsfeed</li>
+        </ol>
+      </nav>
+      <div class="hero-label mb-6 flex items-center gap-4">
+        <span class="inline-block w-10 h-px bg-[#DA291C]"></span>
+        <span class="f-label text-[11px] text-white/70">Field Notes</span>
       </div>
+      <h1 class="hero-heading f-display text-white text-[clamp(3rem,8vw,6.5rem)] mb-6">
+        Newsfeed.
+      </h1>
+      <p class="hero-sub text-white/75 text-lg max-w-2xl leading-[1.6]">
+        Tips, updates, and industry notes from the Team Drywall crew — for homeowners and contractors across BC and Alberta.
+      </p>
     </div>
   </section>
 
-  <main class="py-20 bg-brand-light-gray">
-    <div class="max-w-4xl mx-auto px-4">
-      <div class="space-y-10">
-
-        <!-- Article 1 -->
-        <article id="article-finish-levels" class="bg-white rounded-2xl overflow-hidden reveal" style="box-shadow:0 2px 20px rgba(0,0,0,0.08)">
-          <div class="relative overflow-hidden" style="height:260px">
-            <img src="brand_assets/banner3.jpg" alt="Professional drywall taping and finishing levels in Kelowna BC" class="w-full h-full object-cover" loading="eager" width="800" height="260" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            <div class="absolute top-4 left-4"><span class="bg-brand-red text-white font-display text-xs tracking-wide px-3 py-1 rounded-full">Tips &amp; Advice</span></div>
-            <div class="absolute bottom-4 left-4"><time class="text-white/70 text-xs" datetime="2024-03-15">March 15, 2024</time></div>
-          </div>
-          <div class="p-8">
-            <h2 class="font-display text-2xl md:text-3xl font-700 text-brand-black mb-4">The Difference Between Drywall Finish Levels — What You Need to Know</h2>
-            <p class="text-brand-gray leading-relaxed mb-4">Not all drywall finishes are equal. From Level 1 (fire-taped only) to Level 5 (full skim coat), the right finish level depends on your lighting, paint sheen, and intended use. Here's what each level means and when to use it.</p>
-            <div class="space-y-3 mb-4">
-              <div class="flex gap-3"><span class="font-display font-600 text-brand-red flex-shrink-0 w-16">Level 1</span><span class="text-brand-gray text-sm leading-relaxed">Tape embedded in compound only. Used in areas where the surface won't be seen — above accessible ceilings, service corridors, storage rooms.</span></div>
-              <div class="flex gap-3"><span class="font-display font-600 text-brand-red flex-shrink-0 w-16">Level 2</span><span class="text-brand-gray text-sm leading-relaxed">Tape + one coat over fasteners. Used in garages, warehouses, or anywhere that will receive a heavy texture. Not for paint.</span></div>
-              <div class="flex gap-3"><span class="font-display font-600 text-brand-red flex-shrink-0 w-16">Level 3</span><span class="text-brand-gray text-sm leading-relaxed">Tape + two coats. Suitable for medium to heavy texture. Not recommended for smooth or semi-gloss finishes.</span></div>
-              <div class="flex gap-3"><span class="font-display font-600 text-brand-red flex-shrink-0 w-16">Level 4</span><span class="text-brand-gray text-sm leading-relaxed">Tape + three coats. The residential standard. Suitable for flat and matte paints. This is what most homes receive.</span></div>
-              <div class="flex gap-3"><span class="font-display font-600 text-brand-red flex-shrink-0 w-16">Level 5</span><span class="text-brand-gray text-sm leading-relaxed">Full skim coat over the entire surface. The premium finish — required for high-gloss or semi-gloss paints, strong side-lighting, or high-end interiors.</span></div>
-            </div>
-            <p class="text-brand-gray text-sm leading-relaxed mb-6">If you're unsure which level your project needs, our team will advise you during your free quote. Most Kelowna homeowners choose Level 4 for standard rooms and Level 5 for feature walls and main living areas.</p>
-            <a href="services.html#taping" class="inline-flex items-center gap-2 font-display text-sm text-brand-red hover:text-brand-red-dark transition-colors duration-200 group">Learn about our taping &amp; finishing services <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-          </div>
-        </article>
-
-        <!-- Article 2 -->
-        <article id="article-commercial-drywall" class="bg-white rounded-2xl overflow-hidden reveal" style="box-shadow:0 2px 20px rgba(0,0,0,0.08)">
-          <div class="relative overflow-hidden" style="height:260px">
-            <img src="brand_assets/banner4.jpg" alt="Commercial drywall ceiling installation in Kelowna BC" class="w-full h-full object-cover" loading="lazy" width="800" height="260" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            <div class="absolute top-4 left-4"><span class="bg-brand-red text-white font-display text-xs tracking-wide px-3 py-1 rounded-full">Commercial</span></div>
-            <div class="absolute bottom-4 left-4"><time class="text-white/70 text-xs" datetime="2024-01-22">January 22, 2024</time></div>
-          </div>
-          <div class="p-8">
-            <h2 class="font-display text-2xl md:text-3xl font-700 text-brand-black mb-4">Choosing the Right Drywall for Commercial Projects in BC</h2>
-            <p class="text-brand-gray leading-relaxed mb-4">Commercial drywall isn't one-size-fits-all. BC Building Code requires specific assemblies depending on your occupancy type, fire separation rating, and moisture exposure. Here's a breakdown of the most common board types used in commercial construction.</p>
-            <div class="grid sm:grid-cols-2 gap-4 mb-4">
-              <div class="bg-brand-light-gray rounded-xl p-4">
-                <div class="font-display font-600 text-brand-black mb-1">Type X (Fire-Rated)</div>
-                <p class="text-brand-gray text-sm leading-relaxed">Required in fire separations between suites, mechanical rooms, and exit corridors. Achieves 1-hour or 2-hour ratings depending on the assembly.</p>
-              </div>
-              <div class="bg-brand-light-gray rounded-xl p-4">
-                <div class="font-display font-600 text-brand-black mb-1">Moisture-Resistant (Green/Purple Board)</div>
-                <p class="text-brand-gray text-sm leading-relaxed">Used in areas exposed to humidity — kitchens, bathrooms, change rooms, and exterior-adjacent walls. Required before tile in wet areas.</p>
-              </div>
-              <div class="bg-brand-light-gray rounded-xl p-4">
-                <div class="font-display font-600 text-brand-black mb-1">Abuse-Resistant Board</div>
-                <p class="text-brand-gray text-sm leading-relaxed">Common in high-traffic commercial spaces — schools, hospitals, hallways. Significantly harder than standard drywall and resists dents and punctures.</p>
-              </div>
-              <div class="bg-brand-light-gray rounded-xl p-4">
-                <div class="font-display font-600 text-brand-black mb-1">Standard 5/8" Board</div>
-                <p class="text-brand-gray text-sm leading-relaxed">Used in office ceilings, interior partitions, and non-rated walls. The workhorse of commercial construction — cost-effective and easy to finish.</p>
-              </div>
-            </div>
-            <p class="text-brand-gray text-sm leading-relaxed mb-6">Team Drywall works with general contractors across BC and Alberta on commercial projects of all sizes. We know the code requirements and will ensure your assembly spec is correct before we start.</p>
-            <a href="services.html#commercial" class="inline-flex items-center gap-2 font-display text-sm text-brand-red hover:text-brand-red-dark transition-colors duration-200 group">See our commercial drywall services <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-          </div>
-        </article>
-
-        <!-- Article 3 -->
-        <article id="article-repair-signs" class="bg-white rounded-2xl overflow-hidden reveal" style="box-shadow:0 2px 20px rgba(0,0,0,0.08)">
-          <div class="relative overflow-hidden" style="height:260px">
-            <img src="brand_assets/banner1.jpg" alt="Residential drywall renovation Kelowna BC" class="w-full h-full object-cover" loading="lazy" width="800" height="260" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-            <div class="absolute top-4 left-4"><span class="bg-brand-red text-white font-display text-xs tracking-wide px-3 py-1 rounded-full">Homeowner Tips</span></div>
-            <div class="absolute bottom-4 left-4"><time class="text-white/70 text-xs" datetime="2023-10-05">October 5, 2023</time></div>
-          </div>
-          <div class="p-8">
-            <h2 class="font-display text-2xl md:text-3xl font-700 text-brand-black mb-4">5 Signs Your Drywall Needs Professional Repair (Not a DIY Patch)</h2>
-            <p class="text-brand-gray leading-relaxed mb-5">Small nail holes are a quick DIY fix. But there are situations where a patch-and-paint won't cut it — and where trying can actually make things worse. Here are five signs it's time to call a professional drywall contractor in Kelowna.</p>
-            <ol class="space-y-4 mb-5">
-              <li class="flex gap-4">
-                <span class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center font-display font-700 text-white flex-shrink-0 text-sm">1</span>
-                <div><div class="font-display font-600 text-brand-black mb-1">Cracks longer than 6 inches</div><p class="text-brand-gray text-sm leading-relaxed">Hairline cracks are cosmetic. Long, diagonal, or recurring cracks — especially around doors and windows — can indicate structural movement or settling. A pro will assess the cause, not just fill the crack.</p></div>
-              </li>
-              <li class="flex gap-4">
-                <span class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center font-display font-700 text-white flex-shrink-0 text-sm">2</span>
-                <div><div class="font-display font-600 text-brand-black mb-1">Water stains or bubbling paint</div><p class="text-brand-gray text-sm leading-relaxed">Discoloration or bubbling usually means water is — or was — present. Drywall absorbs moisture and can harbour mould. Painting over it won't fix it. The damaged section needs to come out.</p></div>
-              </li>
-              <li class="flex gap-4">
-                <span class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center font-display font-700 text-white flex-shrink-0 text-sm">3</span>
-                <div><div class="font-display font-600 text-brand-black mb-1">Sagging or soft ceiling panels</div><p class="text-brand-gray text-sm leading-relaxed">A ceiling that feels soft or sags when you press it is a safety concern. It can indicate water damage above, improper fastening, or board failure. Don't ignore it.</p></div>
-              </li>
-              <li class="flex gap-4">
-                <span class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center font-display font-700 text-white flex-shrink-0 text-sm">4</span>
-                <div><div class="font-display font-600 text-brand-black mb-1">Holes larger than a fist</div><p class="text-brand-gray text-sm leading-relaxed">Larger holes need a backer board, proper taping, and blended finishing to look right. Without it, you'll see the patch every time the light hits it. A professional repair is invisible.</p></div>
-              </li>
-              <li class="flex gap-4">
-                <span class="w-8 h-8 bg-brand-red rounded-full flex items-center justify-center font-display font-700 text-white flex-shrink-0 text-sm">5</span>
-                <div><div class="font-display font-600 text-brand-black mb-1">Texture that won't match</div><p class="text-brand-gray text-sm leading-relaxed">Orange peel, knockdown, skip trowel — matching existing texture is a skill. If the previous patch sticks out like a sore thumb, it's time to call someone who does this for a living.</p></div>
-              </li>
-            </ol>
-            <a href="services.html#repair" class="inline-flex items-center gap-2 font-display text-sm text-brand-red hover:text-brand-red-dark transition-colors duration-200 group">Learn about our drywall repair services <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-          </div>
-        </article>
-
-      </div>
-
-      <!-- Newsletter CTA -->
-      <div class="mt-16 bg-brand-black rounded-2xl p-10 text-center">
-        <h2 class="font-display text-3xl font-700 text-white mb-3">Have a Drywall Project?</h2>
-        <p class="text-gray-400 mb-8 max-w-xl mx-auto">Skip the reading and get straight to a free quote. We respond fast.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-          <a href="quote.html" class="font-display font-600 tracking-wide px-7 py-3.5 bg-brand-red text-white rounded hover:bg-brand-red-dark transition-colors duration-200" style="box-shadow:0 4px 16px rgba(218,41,28,0.3)">REQUEST A FREE QUOTE</a>
-          <a href="tel:2508072700" class="font-display font-600 tracking-wide px-7 py-3.5 border border-white/30 text-white rounded hover:bg-white/10 transition-colors duration-200">CALL 250-807-2700</a>
+  <!-- ═══════════════════ ARTICLE 1 · Finish Levels ═══════════════════ -->
+  <article id="article-finish-levels" class="bg-white border-t border-black py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16">
+      <aside class="lg:col-span-4 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-4">001 / Tips &amp; Advice</div>
+        <time class="f-label text-[10px] text-black/40 block mb-6" datetime="2024-03-15">March 15, 2024</time>
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner3.jpg" alt="Drywall finish levels Kelowna — Level 1 to 5 explained" class="w-full h-full object-cover" width="800" height="600" loading="lazy" decoding="async" />
         </div>
+      </aside>
+      <div class="lg:col-span-8 reveal reveal-d2">
+        <h2 class="f-display text-4xl lg:text-5xl text-black mb-6">
+          The difference between<br>drywall finish levels.
+        </h2>
+        <p class="text-[#666] text-lg leading-[1.75] mb-8">Not all drywall finishes are equal. From Level 1 (fire-taped only) to Level 5 (full skim coat), the right finish level depends on your lighting, paint sheen, and intended use. Here's what each level means — and when to use it.</p>
+        <div class="space-y-0 border-t border-black/15 mb-8">
+          <div class="grid grid-cols-[80px_1fr] gap-6 py-5 border-b border-black/15">
+            <span class="f-label text-xs text-[#DA291C]">Level 1</span>
+            <p class="text-[#444] text-sm leading-[1.7]">Tape embedded in compound only. Used in areas where the surface won't be seen — above accessible ceilings, service corridors, storage rooms.</p>
+          </div>
+          <div class="grid grid-cols-[80px_1fr] gap-6 py-5 border-b border-black/15">
+            <span class="f-label text-xs text-[#DA291C]">Level 2</span>
+            <p class="text-[#444] text-sm leading-[1.7]">Tape + one coat over fasteners. Used in garages, warehouses, or anywhere receiving a heavy texture. Not for paint.</p>
+          </div>
+          <div class="grid grid-cols-[80px_1fr] gap-6 py-5 border-b border-black/15">
+            <span class="f-label text-xs text-[#DA291C]">Level 3</span>
+            <p class="text-[#444] text-sm leading-[1.7]">Tape + two coats. Suitable for medium to heavy texture. Not recommended for smooth or semi-gloss finishes.</p>
+          </div>
+          <div class="grid grid-cols-[80px_1fr] gap-6 py-5 border-b border-black/15">
+            <span class="f-label text-xs text-[#DA291C]">Level 4</span>
+            <p class="text-[#444] text-sm leading-[1.7]">Tape + three coats. The residential standard. Suitable for flat and matte paints. This is what most homes receive.</p>
+          </div>
+          <div class="grid grid-cols-[80px_1fr] gap-6 py-5 border-b border-black/15">
+            <span class="f-label text-xs text-[#DA291C]">Level 5</span>
+            <p class="text-[#444] text-sm leading-[1.7]">Full skim coat over the entire surface. The premium finish — required for high-gloss paints, strong side-lighting, or high-end interiors.</p>
+          </div>
+        </div>
+        <p class="text-[#666] leading-[1.75] mb-8">If you're unsure which level your project needs, our team will advise you during your free quote. Most Kelowna homeowners choose Level 4 for standard rooms and Level 5 for feature walls and main living areas.</p>
+        <a href="services.html#taping" class="f-btn f-btn-white">
+          Our Taping &amp; Finishing Services
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
       </div>
     </div>
-  </main>
+  </article>
+
+  <!-- ═══════════════════ ARTICLE 2 · Commercial (black) ═══════════════════ -->
+  <article id="article-commercial-drywall" class="bg-black text-white py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16">
+      <aside class="lg:col-span-4 lg:order-last reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-4">002 / Commercial</div>
+        <time class="f-label text-[10px] text-white/50 block mb-6" datetime="2024-01-22">January 22, 2024</time>
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner4.jpg" alt="Commercial drywall types BC — fire-rated, moisture, abuse-resistant" class="w-full h-full object-cover" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+      </aside>
+      <div class="lg:col-span-8 reveal reveal-d2">
+        <h2 class="f-display text-4xl lg:text-5xl text-white mb-6">
+          Choosing the right drywall<br>for commercial projects in BC.
+        </h2>
+        <p class="text-white/75 text-lg leading-[1.75] mb-8">Commercial drywall isn't one-size-fits-all. BC Building Code requires specific assemblies depending on occupancy type, fire separation rating, and moisture exposure. Here's a breakdown of the most common board types used in commercial construction.</p>
+        <div class="grid sm:grid-cols-2 gap-px bg-white/10 border border-white/10 mb-8">
+          <div class="bg-black p-6">
+            <div class="f-label text-[10px] text-[#DA291C] mb-3">Fire-Rated</div>
+            <div class="font-semibold text-white mb-2">Type X</div>
+            <p class="text-white/60 text-sm leading-[1.7]">Required in fire separations between suites, mechanical rooms, and exit corridors. Achieves 1-hour or 2-hour ratings depending on the assembly.</p>
+          </div>
+          <div class="bg-black p-6">
+            <div class="f-label text-[10px] text-[#DA291C] mb-3">Moisture</div>
+            <div class="font-semibold text-white mb-2">Green / Purple Board</div>
+            <p class="text-white/60 text-sm leading-[1.7]">Used in areas exposed to humidity — kitchens, bathrooms, change rooms. Required before tile in wet areas.</p>
+          </div>
+          <div class="bg-black p-6">
+            <div class="f-label text-[10px] text-[#DA291C] mb-3">High Traffic</div>
+            <div class="font-semibold text-white mb-2">Abuse-Resistant</div>
+            <p class="text-white/60 text-sm leading-[1.7]">Common in high-traffic spaces — schools, hospitals, hallways. Harder than standard drywall; resists dents and punctures.</p>
+          </div>
+          <div class="bg-black p-6">
+            <div class="f-label text-[10px] text-[#DA291C] mb-3">Standard</div>
+            <div class="font-semibold text-white mb-2">5/8" Board</div>
+            <p class="text-white/60 text-sm leading-[1.7]">Used in office ceilings, interior partitions, non-rated walls. Cost-effective workhorse of commercial construction.</p>
+          </div>
+        </div>
+        <p class="text-white/75 leading-[1.75] mb-8">Team Drywall works with general contractors across BC and Alberta on commercial projects of all sizes. We know the code requirements and ensure your assembly spec is correct before we start.</p>
+        <a href="services.html#commercial" class="f-btn f-btn-ghost">
+          Commercial Drywall Services
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ═══════════════════ ARTICLE 3 · Repair Signs ═══════════════════ -->
+  <article id="article-repair-signs" class="bg-white py-20 lg:py-28">
+    <div class="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-12 gap-12 lg:gap-16">
+      <aside class="lg:col-span-4 reveal">
+        <div class="f-label text-[11px] text-[#DA291C] mb-4">003 / Homeowner Tips</div>
+        <time class="f-label text-[10px] text-black/40 block mb-6" datetime="2023-10-05">October 5, 2023</time>
+        <div class="relative aspect-[4/3] overflow-hidden" style="border-radius:2px">
+          <img src="brand_assets/banner1.jpg" alt="Drywall repair signs Kelowna — when to call a professional" class="w-full h-full object-cover" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+      </aside>
+      <div class="lg:col-span-8 reveal reveal-d2">
+        <h2 class="f-display text-4xl lg:text-5xl text-black mb-6">
+          5 signs your drywall needs<br>a professional — not a patch.
+        </h2>
+        <p class="text-[#666] text-lg leading-[1.75] mb-8">Small nail holes are a quick DIY fix. But there are situations where patch-and-paint won't cut it — and where trying can actually make things worse. Here are five signs it's time to call a professional drywall contractor in Kelowna.</p>
+        <ol class="space-y-0 border-t border-black/15 mb-8">
+          <li class="grid grid-cols-[60px_1fr] gap-6 py-6 border-b border-black/15">
+            <span class="f-display text-3xl text-[#DA291C]">01</span>
+            <div>
+              <h3 class="font-semibold text-black mb-2">Cracks longer than 6 inches</h3>
+              <p class="text-[#666] text-sm leading-[1.7]">Hairline cracks are cosmetic. Long, diagonal, or recurring cracks — especially around doors and windows — can indicate structural movement or settling. A pro will assess the cause, not just fill the crack.</p>
+            </div>
+          </li>
+          <li class="grid grid-cols-[60px_1fr] gap-6 py-6 border-b border-black/15">
+            <span class="f-display text-3xl text-[#DA291C]">02</span>
+            <div>
+              <h3 class="font-semibold text-black mb-2">Water stains or bubbling paint</h3>
+              <p class="text-[#666] text-sm leading-[1.7]">Discoloration or bubbling usually means water is — or was — present. Drywall absorbs moisture and can harbour mould. Painting over it won't fix it. The damaged section needs to come out.</p>
+            </div>
+          </li>
+          <li class="grid grid-cols-[60px_1fr] gap-6 py-6 border-b border-black/15">
+            <span class="f-display text-3xl text-[#DA291C]">03</span>
+            <div>
+              <h3 class="font-semibold text-black mb-2">Sagging or soft ceiling panels</h3>
+              <p class="text-[#666] text-sm leading-[1.7]">A ceiling that feels soft or sags when you press it is a safety concern. Can indicate water damage above, improper fastening, or board failure. Don't ignore it.</p>
+            </div>
+          </li>
+          <li class="grid grid-cols-[60px_1fr] gap-6 py-6 border-b border-black/15">
+            <span class="f-display text-3xl text-[#DA291C]">04</span>
+            <div>
+              <h3 class="font-semibold text-black mb-2">Holes larger than a fist</h3>
+              <p class="text-[#666] text-sm leading-[1.7]">Larger holes need a backer board, proper taping, and blended finishing to look right. Without it you'll see the patch every time the light hits. A professional repair is invisible.</p>
+            </div>
+          </li>
+          <li class="grid grid-cols-[60px_1fr] gap-6 py-6 border-b border-black/15">
+            <span class="f-display text-3xl text-[#DA291C]">05</span>
+            <div>
+              <h3 class="font-semibold text-black mb-2">Texture that won't match</h3>
+              <p class="text-[#666] text-sm leading-[1.7]">Orange peel, knockdown, skip trowel — matching existing texture is a skill. If the last patch sticks out, it's time to call someone who does this for a living.</p>
+            </div>
+          </li>
+        </ol>
+        <a href="services.html#repair" class="f-btn f-btn-red">
+          Drywall Repair Services
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- ═══════════════════ CTA close ═══════════════════ -->
+  <section class="relative bg-black text-white py-24 lg:py-32">
+    <div class="relative max-w-[1400px] mx-auto px-6 text-center reveal">
+      <div class="f-label text-[11px] text-[#DA291C] mb-8 inline-flex items-center">
+        <span class="inline-block w-8 h-px bg-[#DA291C] mr-3"></span>
+        Skip the reading
+        <span class="inline-block w-8 h-px bg-[#DA291C] ml-3"></span>
+      </div>
+      <h2 class="f-display text-5xl md:text-7xl text-white mb-8 max-w-3xl mx-auto">
+        Got a drywall project?<br>Let's talk.
+      </h2>
+      <p class="text-white/70 text-lg mb-12 max-w-xl mx-auto leading-[1.6]">
+        Free quote within one business day. Fast response.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-3">
+        <a href="quote.html" class="f-btn f-btn-red">
+          Request a Free Quote
+          <svg class="f-arrow w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="tel:2508072700" class="f-btn f-btn-ghost">
+          250 · 807 · 2700
+        </a>
+      </div>
+    </div>
+  </section>
 
   <div id="site-widgets"></div>
   <div id="site-footer"></div>
