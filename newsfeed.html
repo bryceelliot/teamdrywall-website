@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="geo.region" content="CA-BC" />
+  <meta name="geo.placename" content="Kelowna" />
+  <meta name="geo.position" content="49.8994739;-119.3884542" />
+  <meta name="ICBM" content="49.8994739, -119.3884542" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
   <title>Newsfeed &amp; Drywall Tips | Team Drywall Ltd. Kelowna</title>
   <meta name="description" content="News, tips, and updates from Team Drywall Ltd. in Kelowna, BC. Drywall advice for homeowners and contractors in BC and Alberta." />
   <meta name="keywords" content="drywall tips Kelowna, drywall news BC, Team Drywall blog, drywall advice homeowners" />
@@ -52,10 +57,14 @@
   }
   ]
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <script>tailwind.config={theme:{extend:{colors:{brand:{red:'#CC0000','red-dark':'#990000',black:'#1A1A1A',gray:'#666666','light-gray':'#F0F0F0'}},fontFamily:{display:['Oswald','sans-serif'],body:['Open Sans','sans-serif']}}}}</script>
-  <style>*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Open Sans',sans-serif;color:#1A1A1A;overflow-x:hidden}h1,h2,h3,h4{font-family:'Oswald',sans-serif;letter-spacing:-0.02em}.nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:#CC0000;transform:scaleX(0);transition:transform 0.2s ease}.nav-link:hover::after{transform:scaleX(1)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#f0f0f0}::-webkit-scrollbar-thumb{background:#CC0000;border-radius:3px}
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Narrow:wght@400;500;600;700&display=swap" /></noscript>
+  
+  <style>*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Archivo',sans-serif;color:#1A1A1A;overflow-x:hidden}h1,h2,h3,h4{font-family:'Archivo',sans-serif;letter-spacing:-0.02em}.nav-link{position:relative}.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:2px;background:#DA291C;transform:scaleX(0);transition:transform 0.2s ease}.nav-link:hover::after{transform:scaleX(1)}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#f0f0f0}::-webkit-scrollbar-thumb{background:#DA291C;border-radius:3px}
   .reveal{opacity:0;transform:translateY(36px);transition:opacity 0.7s cubic-bezier(0.22,1,0.36,1),transform 0.7s cubic-bezier(0.22,1,0.36,1)}.reveal.visible{opacity:1!important;transform:none!important}.reveal-d1{transition-delay:0.1s}.reveal-d2{transition-delay:0.2s}
   .article-body{max-height:0;overflow:hidden;transition:max-height 0.5s ease}.article-body.open{max-height:1200px}</style>
 </head>
@@ -180,7 +189,7 @@
         <h2 class="font-display text-3xl font-700 text-white mb-3">Have a Drywall Project?</h2>
         <p class="text-gray-400 mb-8 max-w-xl mx-auto">Skip the reading and get straight to a free quote. We respond fast.</p>
         <div class="flex flex-wrap justify-center gap-4">
-          <a href="quote.html" class="font-display font-600 tracking-wide px-7 py-3.5 bg-brand-red text-white rounded hover:bg-brand-red-dark transition-colors duration-200" style="box-shadow:0 4px 16px rgba(204,0,0,0.3)">REQUEST A FREE QUOTE</a>
+          <a href="quote.html" class="font-display font-600 tracking-wide px-7 py-3.5 bg-brand-red text-white rounded hover:bg-brand-red-dark transition-colors duration-200" style="box-shadow:0 4px 16px rgba(218,41,28,0.3)">REQUEST A FREE QUOTE</a>
           <a href="tel:2508072700" class="font-display font-600 tracking-wide px-7 py-3.5 border border-white/30 text-white rounded hover:bg-white/10 transition-colors duration-200">CALL 250-807-2700</a>
         </div>
       </div>

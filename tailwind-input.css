@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Ferrari-inspired global styles
+   ============================================================ */
+
+:root {
+  --f-red: #DA291C;
+  --f-red-dark: #B01E0A;
+  --f-black: #000000;
+  --f-charcoal: #181818;
+  --f-surface-dark: #303030;
+  --f-border: #CCCCCC;
+  --f-text: #181818;
+  --f-text-muted: #666666;
+  --f-text-subtle: #8F8F8F;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Archivo', system-ui, sans-serif;
+  color: var(--f-text);
+  overflow-x: hidden;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.f-label {
+  font-family: 'Archivo Narrow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+.f-display {
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 0.95;
+}
+
+/* Buttons */
+.f-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  padding: 14px 24px;
+  border-radius: 2px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+  line-height: 1;
+}
+.f-btn-red { background: var(--f-red); color: #fff; }
+.f-btn-red:hover { background: var(--f-red-dark); }
+.f-btn-white { background: #fff; color: #000; border: 1px solid #000; }
+.f-btn-white:hover { background: #000; color: #fff; }
+.f-btn-ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.4); }
+.f-btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.05); }
+.f-btn-dark { background: #000; color: #fff; border: 1px solid #000; }
+.f-btn-dark:hover { background: var(--f-red); border-color: var(--f-red); }
+
+.f-arrow { display: inline-block; transition: transform 0.2s ease; }
+.f-btn:hover .f-arrow { transform: translateX(4px); }
+
+/* Nav link */
+.f-nav-link { position: relative; }
+
+/* Hero slider crossfade */
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+.slide.active { opacity: 1; }
+
+/* Hero entrance animations */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-label   { animation: heroFadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.25s both; }
+.hero-heading { animation: heroFadeUp 0.9s cubic-bezier(0.22,1,0.36,1) 0.4s both; }
+.hero-sub     { animation: heroFadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.6s both; }
+.hero-btns    { animation: heroFadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.75s both; }
+.hero-stats   { animation: heroFadeUp 0.7s cubic-bezier(0.22,1,0.36,1) 0.9s both; }
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1);
+}
+.reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.16s; }
+.reveal-d3 { transition-delay: 0.24s; }
+.reveal-d4 { transition-delay: 0.32s; }
+.reveal-d5 { transition-delay: 0.4s; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #333; }
+::-webkit-scrollbar-thumb:hover { background: var(--f-red); }
+
+/* Pulse for emergency badge dot */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+/* Horizontal marquee */
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee { animation: marqueeScroll 40s linear infinite; }
+
+/* Focus-visible a11y */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--f-red);
+  outline-offset: 2px;
+}
+
+/* Form inputs */
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--f-red);
+  box-shadow: 0 0 0 3px rgba(218,41,28,0.12);
+  outline: none;
+}

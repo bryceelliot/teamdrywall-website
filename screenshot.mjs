@@ -27,7 +27,20 @@ const browser = await puppeteer.launch({
 const page = await browser.newPage();
 await page.setViewport({ width: 1440, height: 900 });
 await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
-await new Promise(r => setTimeout(r, 1000));
+// Scroll page to trigger IntersectionObserver reveals, then return to top
+await page.evaluate(async () => {
+  await new Promise(resolve => {
+    let y = 0;
+    const step = 300;
+    const t = setInterval(() => {
+      window.scrollTo(0, y);
+      y += step;
+      if (y >= document.body.scrollHeight) { clearInterval(t); resolve(); }
+    }, 60);
+  });
+  window.scrollTo(0, 0);
+});
+await new Promise(r => setTimeout(r, 1500));
 await page.screenshot({ path: filename, fullPage: true });
 await browser.close();
 console.log(`Screenshot saved: ${filename}`);
