@@ -10,7 +10,7 @@ const cfg = {
   secure: true,
   secureOptions: { rejectUnauthorized: false },
 };
-const REMOTE = '/home2/lfgobpmy/public_html';
+const REMOTE = '/home2/lfgobpmy/public_html/website_58888ee8';
 const KEEP = new Set(['.well-known', 'cgi-bin', 'ssl', 'tmp', '.ftpquota', '.trash']);
 
 const UPLOAD_FILES = [
