@@ -1,6 +1,17 @@
 # ── Error pages ───────────────────────────────────────────────────────────────
 ErrorDocument 404 /404.html
 
+# ── Disable LiteSpeed full-page cache ─────────────────────────────────────────
+# Bluehost runs LiteSpeed, which was serving a stale full-page snapshot and
+# hiding fresh deploys. Disable server-side page caching for this site so
+# uploads go live immediately. Static-asset browser caching (mod_expires) below
+# is unaffected; this only stops LiteSpeed's HTML page cache.
+<IfModule LiteSpeed>
+  CacheDisable public /
+  RewriteEngine On
+  RewriteRule .* - [E=Cache-Control:no-cache]
+</IfModule>
+
 # ── Gzip compression ──────────────────────────────────────────────────────────
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/css
