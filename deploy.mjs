@@ -10,7 +10,11 @@ const cfg = {
   secure: true,
   secureOptions: { rejectUnauthorized: false },
 };
-const REMOTE = '/home2/lfgobpmy/public_html/website_58888ee8';
+// FTP login is jailed: PWD after connect is '/', which already IS the account's
+// public_html. So the served folder is '/website_58888ee8'. Using the absolute
+// '/home2/lfgobpmy/public_html/website_58888ee8' resolves to a doubled, UNSERVED
+// path nested inside public_html — do not use it.
+const REMOTE = '/website_58888ee8';
 const KEEP = new Set(['.well-known', 'cgi-bin', 'ssl', 'tmp', '.ftpquota', '.trash']);
 
 const UPLOAD_FILES = [
