@@ -56,7 +56,7 @@
   }
   ]
   </script>
-  <link rel="preload" as="image" href="brand_assets/banner5.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="brand_assets/banner5.webp" fetchpriority="high" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,7 +67,7 @@
     #contact-success{display:none}
     .f-input{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,0.25);color:#fff;padding:14px 0;font-family:inherit;font-size:16px;transition:border-color 0.2s}
     .f-input:focus{outline:none;border-bottom-color:#DA291C;box-shadow:none}
-    .f-input::placeholder{color:rgba(255,255,255,0.35)}
+    .f-input::placeholder{color:rgba(255,255,255,0.55)}
     textarea.f-input{resize:none}
   </style>
 </head>
@@ -77,7 +77,7 @@
 
   <!-- ═══════════════════ HERO ═══════════════════ -->
   <section class="relative bg-black text-white overflow-hidden" style="min-height:55vh">
-    <img src="brand_assets/banner5.jpg" alt="Contact Team Drywall Ltd. Kelowna" class="absolute inset-0 w-full h-full object-cover opacity-30" width="1920" height="1080" fetchpriority="high" loading="eager" decoding="async" />
+    <img src="brand_assets/banner5.webp" alt="Contact Team Drywall Ltd. Kelowna" class="absolute inset-0 w-full h-full object-cover opacity-30" width="1920" height="1080" fetchpriority="high" loading="eager" decoding="async" />
     <div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.6) 50%,rgba(0,0,0,0.3) 100%)"></div>
     <div class="relative max-w-[1400px] mx-auto px-6 py-20 lg:py-28" style="min-height:55vh">
       <nav aria-label="Breadcrumb" class="mb-8">
@@ -102,7 +102,7 @@
   </section>
 
   <!-- ═══════════════════ CONTACT CHANNELS (white) ═══════════════════ -->
-  <section class="bg-white py-20 lg:py-24">
+  <section class="bg-white py-24 lg:py-32">
     <div class="max-w-[1400px] mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-px bg-black/10 border border-black">
         <a href="tel:2508072700" class="group bg-white hover:bg-[#DA291C] transition-colors duration-300 p-8 lg:p-10 block reveal reveal-d1">
@@ -146,21 +146,21 @@
           <div class="flex items-start gap-3 py-2">
             <svg class="w-4 h-4 text-[#DA291C] mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/></svg>
             <div>
-              <div class="f-label text-[10px] text-white/40">Phone</div>
+              <div class="f-label text-[10px] text-white/60">Phone</div>
               <a href="tel:2508072700" class="text-white hover:text-[#DA291C]">250-807-2700</a>
             </div>
           </div>
           <div class="flex items-start gap-3 py-2 border-t border-white/10">
             <svg class="w-4 h-4 text-[#DA291C] mt-1" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
             <div>
-              <div class="f-label text-[10px] text-white/40">Email</div>
+              <div class="f-label text-[10px] text-white/60">Email</div>
               <a href="mailto:teamdrywall@shaw.ca" class="text-white hover:text-[#DA291C] text-sm">teamdrywall@shaw.ca</a>
             </div>
           </div>
           <div class="flex items-start gap-3 py-2 border-t border-white/10">
             <svg class="w-4 h-4 text-[#DA291C] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <div>
-              <div class="f-label text-[10px] text-white/40">Hours</div>
+              <div class="f-label text-[10px] text-white/60">Hours</div>
               <div class="text-white text-sm">Mon to Fri · 7am to 5pm</div>
             </div>
           </div>
@@ -176,20 +176,20 @@
         <form id="contact-form" novalidate class="space-y-0">
           <div class="grid sm:grid-cols-2 gap-6">
             <div>
-              <label for="c-name" class="f-label text-[10px] text-white/50 block mb-2">Name *</label>
+              <label for="c-name" class="f-label text-[10px] text-white/70 block mb-2">Name *</label>
               <input type="text" id="c-name" name="name" autocomplete="name" placeholder="Your name" required class="f-input" />
             </div>
             <div>
-              <label for="c-phone" class="f-label text-[10px] text-white/50 block mb-2">Phone *</label>
+              <label for="c-phone" class="f-label text-[10px] text-white/70 block mb-2">Phone *</label>
               <input type="tel" id="c-phone" name="phone" autocomplete="tel" placeholder="250-555-0000" required class="f-input" />
             </div>
           </div>
           <div class="mt-6">
-            <label for="c-email" class="f-label text-[10px] text-white/50 block mb-2">Email</label>
+            <label for="c-email" class="f-label text-[10px] text-white/70 block mb-2">Email</label>
             <input type="email" id="c-email" name="email" autocomplete="email" placeholder="you@example.com" class="f-input" />
           </div>
           <div class="mt-6">
-            <label for="c-message" class="f-label text-[10px] text-white/50 block mb-2">Message *</label>
+            <label for="c-message" class="f-label text-[10px] text-white/70 block mb-2">Message *</label>
             <textarea id="c-message" name="message" rows="5" placeholder="How can we help?" required class="f-input"></textarea>
           </div>
           <div id="c-error" class="hidden mt-6 border border-[#DA291C]/50 bg-[#DA291C]/10 text-[#DA291C] text-sm px-4 py-3" style="border-radius:2px"></div>
@@ -204,16 +204,32 @@
   </section>
 
   <!-- ═══════════════════ MAP ═══════════════════ -->
-  <section class="bg-white py-24 lg:py-28">
+  <section class="bg-white py-24 lg:py-32">
     <div class="max-w-[1400px] mx-auto px-6">
       <div class="max-w-3xl mb-10 reveal">
         <h2 class="f-display text-5xl lg:text-6xl text-black">
           170 Eugene Rd,<br>Kelowna.
         </h2>
       </div>
-      <div class="relative overflow-hidden reveal reveal-d2" style="height:480px;border-radius:2px">
-        <iframe src="https://maps.google.com/maps?q=170+Eugene+Rd,+Kelowna,+BC+V1X+2L9&output=embed" width="100%" height="100%" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Team Drywall Ltd. location map"></iframe>
-      </div>
+      <a href="https://maps.google.com/?q=170+Eugene+Rd+Kelowna+BC+V1X+2L9" target="_blank" rel="noopener"
+         class="group relative block bg-black text-white overflow-hidden reveal reveal-d2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#DA291C]" style="height:420px;border-radius:2px">
+        <div class="absolute inset-0 opacity-[0.16]" style="background-image:linear-gradient(rgba(255,255,255,0.5) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.5) 1px,transparent 1px);background-size:52px 52px"></div>
+        <div class="absolute inset-0" style="background:radial-gradient(circle at 28% 55%,rgba(218,41,28,0.30),transparent 62%)"></div>
+        <div class="relative h-full flex flex-col justify-between p-8 lg:p-12">
+          <div class="flex items-center gap-3">
+            <span class="w-10 h-10 flex items-center justify-center bg-[#DA291C]" style="border-radius:999px"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a6 6 0 00-6 6c0 4.5 6 10 6 10s6-5.5 6-10a6 6 0 00-6-6zm0 8.5A2.5 2.5 0 1110 5.5a2.5 2.5 0 010 5z"/></svg></span>
+            <span class="f-label text-[11px] text-white/70">Our Workshop</span>
+          </div>
+          <div>
+            <div class="text-3xl lg:text-4xl font-semibold mb-2">170 Eugene Rd</div>
+            <div class="text-white/70 text-lg mb-7">Kelowna, BC · V1X 2L9</div>
+            <span class="inline-flex items-center gap-2 text-[15px] font-semibold group-hover:text-[#DA291C] transition-colors duration-200">
+              Get Directions
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 
