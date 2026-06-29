@@ -147,7 +147,7 @@ const FOOTER_HTML = `
     <!-- Bottom bar -->
     <div class="pt-5 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
       <span class="text-[12px] text-white/45">&copy; 2026 Team Drywall Ltd. All rights reserved.</span>
-      <span class="text-[12px] text-white/45">Drywall craftsmanship since 1990</span>
+      <span class="text-[12px] text-white/45">Designed by <a href="https://bryceelliot.com" target="_blank" rel="noopener" class="text-white/60 hover:text-[#DA291C] transition-colors duration-200">Elliot Digital</a> · bryceelliot.com</span>
     </div>
   </div>
 </footer>`;
