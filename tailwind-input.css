@@ -82,6 +82,26 @@ h1, h2, h3, h4 {
 /* Nav link */
 .f-nav-link { position: relative; }
 
+/* Header nav links — animated underline, mixed case */
+.nav-link {
+  position: relative;
+  letter-spacing: -0.005em;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.25rem;
+  height: 2px;
+  background: var(--f-red);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.nav-link:hover::after { transform: scaleX(1); }
+.nav-link.active::after { transform: scaleX(1); }
+
 /* Hero slider crossfade */
 .slide {
   position: absolute;
